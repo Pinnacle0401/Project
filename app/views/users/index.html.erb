@@ -10,7 +10,7 @@
     <th></th>
   </tr>
 
-<% for user in @users %>
+<% @users.each do |user| %>
   <tr>
     <td><%=h user.groupCode %></td>
     <td><%=h user.username %></td>
